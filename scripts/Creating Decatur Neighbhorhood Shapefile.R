@@ -81,7 +81,7 @@ spatial_neigh <- data.frame(verticies_df) %>%
 
 spatial_neigh_sp<-as_Spatial(spatial_neigh)
 
-writeOGR(obj=spatial_neigh_sp, dsn="decatur_neighborhoods_shp/", layer="decatur_neighborhoods", driver="ESRI Shapefile")
+writeOGR(obj=spatial_neigh_sp, dsn="decatur_neighborhoods_shp/", layer="decatur_neighborhoods", driver="ESRI Shapefile",overwrite_layer = T)
 
 # adair<- data.frame(adair) %>%
 #   st_as_sf(coords = c("lon", "lat"), crs = 4326) %>%
