@@ -1,6 +1,6 @@
 # decatur_neighborhood_boundaries
 
-This repository stores the code, images, and data that was used to create neighborhood boundaries for the city of Decatur, Georgia. 
+This repository stores the code, images, and data that were used to create neighborhood boundaries for the city of Decatur, Georgia. 
 
 These are the neighborhood boundaries as defined by Zillow, which may differ from other sources like Google Maps. Since a shapefile was not available from Zillow, I reconstructed the boundaries by scraping screenshots (available in this repository) of each boundary on Zillow's website. I then used WebPlotDigitizer (https://automeris.io/WebPlotDigitizer/) to identify the coordinates of each boundary and exported these values as csv files (available in this repository). The included script converts the coordinates to a shapefile.
 
