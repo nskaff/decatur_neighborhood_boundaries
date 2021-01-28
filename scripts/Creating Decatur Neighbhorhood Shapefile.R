@@ -2,6 +2,8 @@
 library(sf)
 library(tidyverse)
 library(mapview)
+library(rgdal)
+library(sp)
 
 #axis locations on webplot digitizer
 # x1=-84.2963 corner of dougherty and mconough
@@ -79,6 +81,7 @@ spatial_neigh <- data.frame(verticies_df) %>%
 
 spatial_neigh_sp<-as_Spatial(spatial_neigh)
 
+writeOGR(obj=spatial_neigh_sp, dsn="decatur_neighborhoods_shp/", layer="decatur_neighborhoods", driver="ESRI Shapefile")
 
 # adair<- data.frame(adair) %>%
 #   st_as_sf(coords = c("lon", "lat"), crs = 4326) %>%
