@@ -68,7 +68,7 @@ verticies_df<-bind_rows("Lenox Place" =lenox, "Adair Park"=adair,
                    "Ponce de Leon Court"=ponce.court, 
                    "West Clairemont"=west.clairemont, 
                    "Old Decatur"=old.decatur, "Great Lakes"=great.lakes, 
-                   "Parkwood"=parkwood, "Glenwood"=glenwood, .id="RegionName")
+                   "Parkwood"=parkwood, "Glenwood Estates"=glenwood, .id="RegionName")
 
 
 #converting neighborhood verticies to spatial polygon
